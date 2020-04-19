@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_020_Horoscope" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020 Horoscope " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqJ-gy-F1U">
+                                <rect key="frame" x="66" y="75.5" width="282" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER YOUR BIRTH YEAR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tmb-Ul-NTJ" userLabel="UserInputLabel">
+                                <rect key="frame" x="94" y="307" width="243" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="J1c-ky-0Ni"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8om-hR-9YV"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZV-za-hUY" userLabel="userOutputLabel">
+                                <rect key="frame" x="74" y="385" width="282" height="133"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="astrologyicon" translatesAutoresizingMaskIntoConstraints="NO" id="4AV-RN-5Qa">
+                                <rect key="frame" x="121" y="129" width="189" height="153"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tmb-Ul-NTJ" firstAttribute="top" secondItem="pqJ-gy-F1U" secondAttribute="bottom" id="1mP-sO-kcD"/>
+                            <constraint firstItem="ZZV-za-hUY" firstAttribute="trailing" secondItem="pqJ-gy-F1U" secondAttribute="trailing" id="2bQ-Bo-8aZ"/>
+                            <constraint firstItem="ZZV-za-hUY" firstAttribute="leading" secondItem="pqJ-gy-F1U" secondAttribute="leading" id="AAj-yT-SJ8"/>
+                            <constraint firstItem="4AV-RN-5Qa" firstAttribute="top" secondItem="Tmb-Ul-NTJ" secondAttribute="bottom" constant="8" id="FEu-N6-Bf7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZZV-za-hUY" secondAttribute="bottom" constant="457" id="Gjq-fK-1vl"/>
+                            <constraint firstItem="ZZV-za-hUY" firstAttribute="top" secondItem="4AV-RN-5Qa" secondAttribute="bottom" constant="21" id="LOr-jX-LNN"/>
+                            <constraint firstItem="ZZV-za-hUY" firstAttribute="centerX" secondItem="4AV-RN-5Qa" secondAttribute="centerX" id="M8y-qZ-fHh"/>
+                            <constraint firstItem="ZZV-za-hUY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="Mst-4G-hcb"/>
+                            <constraint firstItem="Tmb-Ul-NTJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="Qho-9h-cLz"/>
+                            <constraint firstItem="Tmb-Ul-NTJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="121" id="YcY-ei-ITV"/>
+                            <constraint firstItem="ZZV-za-hUY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="360" id="kHH-ao-Ubx"/>
+                            <constraint firstItem="ZZV-za-hUY" firstAttribute="centerX" secondItem="Tmb-Ul-NTJ" secondAttribute="centerX" id="sgW-MV-cja"/>
+                            <constraint firstItem="ZZV-za-hUY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uzX-r8-2Oa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="userOutputLabel" destination="ZZV-za-hUY" id="1VT-k4-nVx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="astrologyicon" width="851" height="736"/>
+    </resources>
+</document>
